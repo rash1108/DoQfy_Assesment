@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.margintopbottomright{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.marginleft{
+    margin-left: 25px;
+}
+.marginright{
+    margin-right: 25px;
+}
+.margintopbottom{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.label:after {
+    content: '\A';
+    white-space: pre;
+}
+.graphstyle {
+    display: block;
+    box-sizing: border-box;
+    height: 100px;
+    width: 200px;
+}
+.colorpurple{
+    color: #6f0bc1;
+
+}
+.stylespan{
+    background-color: rgb(235, 233, 233); 
+    float: right;
+    font-size:10px;
+}
+.textgrey{
+    color: grey;
+}
+.marginright10px{
+    margin-right:10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.marginauto{
+    margin: 15px;
+}
+.marginbottom0rem{
+    margin-bottom: 0rem;
+}
+.iconstyleOrderDetails{
+    float: right; 
+    margin-top: 10px;
+}
+
+.dropdownicon {
+    position: relative;
+}
+
+.dropdownicon:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+}
