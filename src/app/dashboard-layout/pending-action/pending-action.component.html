@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div  class="card" style="width: 20rem; height: 20rem; overflow: scroll;">
+        <div class="card-body" data-bs-spy="scroll">
+    <h5>Pending Actions</h5>
+    <div class="col flex-row flex-nowrap">
+    <div class="card mb-2" style="width: 18rem;" *ngFor="let item of pendingActionData">
+        <div class="card-body">
+         <b>
+          <span class="card-title">{{item.id}}</span><span class="stylespan">{{item.daysAgo}} days ago</span>
+         </b>
+          
+          <p class="card-text textgrey">{{item.filePending}} files are waiting to be uploaded</p>      
+        </div>
+      </div>
+     
+    </div>
+</div>
+</div>

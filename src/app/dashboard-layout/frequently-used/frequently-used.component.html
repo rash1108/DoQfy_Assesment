@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+    <h5>Frequently Used</h5>
+   <div class="row">
+    <div *ngFor="let item of freqUsedResults" class="card" style="width: 19rem; margin: auto; border-color: #6f0bc1;">
+        <div class="card-body">
+          <h6 class="card-title">{{item.text}}</h6>
+          
+          <p style="margin-bottom: 1px;" class="card-text textgrey"> You have used this service {{item.freq}} times in the last one week</p>
+          <b>
+            <a href="#" class="card-link colorpurple">Action CTA >></a>   
+          </b>      
+        </div>
+      </div>
+      
+    </div>   
+    </div>
+</div>
+</div>

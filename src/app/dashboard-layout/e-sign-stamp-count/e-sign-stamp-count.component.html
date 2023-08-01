@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let name of e_count_names" class="card" style="width: 30rem;; margin: auto;">
+        <div class="card-body" style="position: relative;">
+          <h5 class="card-title" style="text-decoration: underline;"> {{name.eCountName}}</h5>
+          <span>
+            <span class="textgrey">
+              <i class="fa-solid fa-square marginright10px" style="color: #dee4ed;"></i>Initiated
+             
+            </span>  
+            <span class="label textgrey">
+              <i class="fa-solid fa-square marginright10px" style="color: #ad7bd5; margin-left: 15px;"></i>Pending
+            </span> 
+          </span>
+          <span>
+            <span class="textgrey">
+              <i class="fa-solid fa-square marginright10px" style="color: #dbc4ee;"></i>Expired
+              </span>
+            <span class="textgrey">  
+              <i class="fa-solid fa-square marginright10px" style="color: #6f0bc1; margin-left: 20px;"></i>Signed
+            </span>  
+          </span> 
+          <span style="position: absolute; top: 30px; right: 2px;">
+            <app-doughnut-chart></app-doughnut-chart>
+          </span>    
+         
+        </div>
+        
+      </div>
+     
+        
+     
+</div>
+</div>

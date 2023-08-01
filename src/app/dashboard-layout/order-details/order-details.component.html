@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+    <h5>Order Details</h5>
+    
+   <div class="row">
+    <div *ngFor="let item of orderResults" class="card ms-2" style="width: 14rem; background-color: #f0e9f8a1; margin: auto;">
+        <div class="card-body">
+            <span><b style="font-size: 20px;">{{item.value}}</b>
+                <i *ngIf="item.id===1" class="ms-5 fa-brands fa-dropbox fa-xl iconstyleOrderDetails" style="color: #6f0bc1;"></i>
+                <i *ngIf="item.id===2" class="fa-solid fa-clock fa-xl iconstyleOrderDetails" style="color: #6f0bc1;"></i>
+                <i *ngIf="item.id===3" class="bi bi-box-seam-fill fa-xl" style="color: #6f0bc1; float: right;"></i>
+                <i *ngIf="item.id===4" class="fa-solid fa-trash fa-xl iconstyleOrderDetails" style="color: #6f0bc1;"></i>
+            </span>
+         
+          <p *ngIf="item.id===1" class="card-text textgrey ">Total Orders </p>
+          <p *ngIf="item.id===2" class="card-text textgrey ">In Progress</p>
+          <p *ngIf="item.id===3" class="card-text textgrey ">Completed Order</p>
+          <p *ngIf="item.id===4" class="card-text textgrey ">Cancelled Order</p>
+
+          <span *ngIf="item.incDec==='I'" style="background-color: #c7f1ce;">
+            <i class='fas fa-arrow-trend-up fa-border' style="color:green;"></i>
+          </span>
+          <span *ngIf="item.incDec==='D'" style="background-color:rgb(235, 204, 193);">
+            <i class='fas fa-arrow-trend-down fa-border' style="color:red;"></i>
+          </span>
+          <span class="textgrey" style="font-size: 14px;">{{item.incrementDecrementVal}}%</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+</div>

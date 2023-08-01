@@ -1,0 +1,50 @@
+<span class="container" style="margin: auto;">
+    <div class="btn-group ">
+      
+      <span class="dropdownicon"> 
+    
+        
+        <select name="statess" id="branches" [(ngModel)]="selectedState" class="form-control">  
+          
+            <option *ngFor="let state of states" [selected]="state.name =='All Branches'" [ngValue]="state.key" >  {{state.name}} </option>
+        </select> 
+      </span>  
+      
+    </div>
+    <span style="float: right;">
+        <div class="btn-group">
+            <button style="background-color: white;" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Custom range
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Range</a></li>
+              <li><a class="dropdown-item" href="#">Range 2</a></li>
+              
+            </ul>
+          </div>
+          <div class="btn-group" style="margin-left: 15px;">
+            <form class="row row-cols-sm-auto">
+                <div class="col-12">
+                    <div class="input-group">
+                        <input
+                            class="form-control"
+                            placeholder="mm-yyyy"
+                            name="dp"
+                            [(ngModel)]="model"
+                            ngbDatepicker
+                            #d="ngbDatepicker"
+                        />
+                        <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+                    </div>
+                </div>
+            </form>
+    
+      
+</div>
+</span>
+    
+
+
+
+</span>
+   

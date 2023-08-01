@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container-fluid row" style="background-color:rgb(231, 231, 239);">
+<div class="col-12 col-lg-3 col-md-6">
+    <div class="container-fluid margintopbottomright marginleft">
+        <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h6 class="card-title">👋🏻 Welcome Back , <b>{{userName}}</b></h6>
+              <p class="card-text textgrey">{{todaysDate | date:'fullDate'}}</p>      
+            </div>
+          </div>
+    </div>
+    <div class="margintopbottomright marginleft">
+        <app-wallet-balance></app-wallet-balance>
+    </div>
+   
+    <div class="margintopbottomright marginleft">
+        <app-pending-action></app-pending-action>
+    </div>
+</div>
+<div class="col-12 col-lg-9 col-md-6">
+    <div class="marginleft margintopbottom">
+        <app-frequently-used></app-frequently-used>
+   
+    </div>
+    <div class="marginleft margintopbottom">      
+        <app-all-branches></app-all-branches>
+    </div>
+    <div class="marginleft margintopbottom">      
+        <app-order-details></app-order-details>
+    </div>
+    <div class="marginleft margintopbottom">      
+        <app-e-sign-stamp-count></app-e-sign-stamp-count>
+    </div>
+   
+
+</div>
+</div>
+<app-footer></app-footer>
